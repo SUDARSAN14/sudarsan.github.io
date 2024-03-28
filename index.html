@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudarsan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header class="nbar">
+        <a href="index.html" id="logo">SUDARSAN</a>   
+        <nav class="items">
+            <a href="#about">ABOUT</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#project">PROJECT</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+    <header id="mob-bar">
+        <a href="index.html" id="logo">SUDARSAN</a>
+        <div class="menu">
+            <div class="menuicon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="item">
+                <a href="#about" onclick="togglemenu()">ABOUT</a>
+                <a href="#experience" onclick="togglemenu()">EXPERIENCE</a>
+                <a href="#project" onclick="togglemenu()">PROJECT</a>
+                <a href="#contact" onclick="togglemenu()">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+    <section id="profile">
+        <div class="pics">
+            <img src="./images/profile.png" alt="My Photo">
+        </div>
+        <div class="text">
+            <p class="p1">Hello, I'M</p>
+            <h1 class="title">SUDARSAN</h1>
+            <p class="p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btnc2" onclick="window.open('./images/Resume.pdf')">Resume</button>
+                <button class="btn btnc1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div class="social">
+                <img src="./images/linkedin.png" alt="linkedin" class="linkicon"
+                onclick="location.href='https://www.linkedin.com/in/sudarsan-i-642439203/'">
+                <img src="./images/github.png" alt="linkedin" class="linkicon"
+                onclick="location.href='https://github.com/SUDARSAN14'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="pics">
+                <img src="./images/Aboutme.jpeg" alt="About Me" id="aboutpic">
+            </div>
+            <div class="about-detail-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./images/experience.png" alt="experience"
+                        class="linkicon">
+                        <h3>Experience</h3>
+                        <p>1 year <br>Fullstack Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./images/education.png" alt="education"
+                        class="linkicon">
+                        <h3>Education</h3>
+                        <p>B.TECH<br>Information Technology</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Highly motivated Fullstack Developer with one year of hands-on experience in designing, developing, and maintaining web applications. Proficient in both frontend and backend technologies, with a keen eye for detail and a passion for crafting user-friendly interfaces. Skilled in collaborating with cross-functional teams to deliver high-quality software solutions that meet client needs and exceed expectations. Committed to continuous learning and staying updated with the latest industry trends and technologies to drive innovation and efficiency in every project.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./images/arrow.png" alt="arrow" class="linkicon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="exp-subtitle">Frontend Development</h2>
+                    <div class="art-container">
+                        <article>
+                            <img src="./images/checkmark.png" alt="checkmark" class="linkicon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="checkmark" class="linkicon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="checkmark" class="linkicon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="checkmark" class="linkicon">
+                            <div>
+                                <h3>React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="checkmark" class="linkicon">
+                            <div>
+                                <h3>JQuery</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="checkmark" class="linkicon">
+                            <div>
+                                <h3>Angular</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="exp-subtitle">Backend Development</h2>
+                    <div class="art-container">
+                        <article>
+                            <img src="./images/checkmark.png" alt="checkmark" class="linkicon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="checkmark" class="linkicon">
+                            <div>
+                                <h3>ExpressJs</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="checkmark" class="linkicon">
+                            <div>
+                                <h3>NodeJs</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="checkmark" class="linkicon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="checkmark" class="linkicon">
+                            <div>
+                                <h3>GIT</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="checkmark" class="linkicon">
+                            <div>
+                                <h3>CPP</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./images/arrow.png" alt="arrow" class="linkicon arrow" onclick="location.href='./#project'">
+    </section>
+    <section id="project">
+        <p class="p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+            <div class="details-container color-container">
+                <div class="art-container">
+                    <img src="./images/Online store.png" alt="Online" class="project-png">
+                </div>
+                <h2 class="exp-subtitle project-txt">Online Store</h2>
+                <div class="btn-container">
+                    <button class="btn btnc2 project-btn" onclick="location.href='https://github.com'">Github</button>
+                    <button class="btn btnc2 project-btn" onclick="location.href='https://github.com'">Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="art-container">
+                    <img src="./images/Career.png" alt="Online" class="project-png">
+                </div>
+                <h2 class="exp-subtitle project-txt">Career Guidance</h2>
+                <div class="btn-container">
+                    <button class="btn btnc2 project-btn" onclick="location.href='https://github.com'">Github</button>
+                    <button class="btn btnc2 project-btn" onclick="location.href='https://github.com'">Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="art-container">
+                    <img src="./images/project-1.png" alt="Online" class="project-png">
+                </div>
+                <h2 class="exp-subtitle project-txt">Chat Application</h2>
+                <div class="btn-container">
+                    <button class="btn btnc2 project-btn" onclick="location.href='https://github.com'">Github</button>
+                    <button class="btn btnc2 project-btn" onclick="location.href='https://github.com'">Demo</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./images/arrow.png" alt="Arrow icon" class="linkicon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="con-info-upper">
+            <div class="con-info-container">
+                <img src="./images/email.png" alt="email" class="linkicon con-icon e-icon">
+                <p id="mailc"><a href="mailto:sudarsanrajan18@gmail.com">sudarsanrajan18@gmail.com</a></p>
+            </div>
+            <div class="con-info-container">
+                <img src="./images/linkedin.png" alt="email" class="linkicon con-icon">
+                <p><a href="https://www.linkedin.com/in/sudarsan-i-642439203/">LinkedIn</a></p>
+            </div>
+        </div>  
+    </section>
+    <footer>
+        <nav class="fot">
+            <div class="nav-container">
+                <div class="nav-links items mar">
+                    <a href="#about">ABOUT</a>
+                    <a href="#experience">EXPERIENCE</a>
+                    <a href="#project">PROJECT</a>
+                    <a href="#contact">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Sudarsan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

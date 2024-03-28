@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+a {
+
+    transition: all 300ms ease;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+  }
+  
+  a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+  }
+
+.nbar{
+
+    display: flex;
+
+}
+
+header {
+
+    height: 17vh;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.items {
+    
+    display: flex;
+    gap: 2em;
+   
+}
+
+#logo {
+    
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+
+}
+
+.items a {
+
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+
+}
+
+.items a:hover {
+
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+
+}
+
+#mob-bar {
+
+    display: none;
+
+}
+
+.menu {
+
+    position: relative;
+    display: inline-block;
+
+}
+
+.menuicon {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+
+}
+
+.menuicon span {
+
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+
+}
+ 
+.item {
+
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.item a {
+
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.item.open {
+
+    max-height: 300px;
+
+}
+
+.menuicon.open span:first-child{
+
+    transform: rotate(45deg) translate(10px,5px);
+
+}
+
+.menuicon.open span:nth-child(2){
+
+    opacity: 0;
+
+}
+
+.menuicon.open span:last-child{
+
+    transform: rotate(-45deg) translate(10px,-5px);
+
+}
+
+.menuicon span:first-child {
+
+    transform: none;
+
+}
+
+.menuicon span:first-child {
+
+    opacity: 1;
+
+}
+
+.menuicon span:first-child {
+
+    transform: none;
+
+}
+
+section {
+
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+
+}
+
+.section-container {
+
+    display: flex;
+
+}
+
+#profile {
+
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+
+}
+
+.pics {
+
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+
+}
+
+.text {
+
+    align-self: center;
+    text-align: center;
+
+}
+
+.text p {
+
+    font-weight: 600;
+    
+}
+
+.p1{
+
+    text-align: center;
+
+}
+
+.p2{
+
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+
+}
+
+.title {
+
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.social {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+
+}
+
+.linkicon{
+
+    cursor: pointer;
+    height: 2rem;
+
+}
+
+.btn-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.btn{
+
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+
+}
+
+.btnc1, .btnc2{
+
+    border: rgb(53,53,53) 0.1rem solid;
+
+}
+
+.btnc1:hover, .btnc2:hover{
+
+    cursor: pointer;
+
+}
+
+.btnc1, .btnc2:hover{
+
+    background: rgb(53,53,53);
+    color: white;   
+
+}
+
+.btnc1:hover{
+
+    background: rgb(0,0,0);
+
+}
+
+.btnc2{
+
+    background: none;
+
+}
+
+.btnc2:hover{
+    border: rgb(255,255,255) 0.1rem solid;
+}
+
+.btn-container{
+    gap: 1rem;
+}
+
+#aboutpic {
+
+    width: 305px;
+    border-radius: 2rem;
+
+}
+
+#about{
+    position: relative;
+
+}
+
+.about-container{
+
+    gap: 2rem;
+    margin-bottom: 2rem; 
+    margin-top: 2rem;
+
+}
+
+.about-detail-container{
+
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.about-container, .about-detail-container{
+    display: flex;
+}
+
+.text-container {
+    text-align: justify;
+}
+
+.arrow{
+
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+
+}
+
+.details-container{
+
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+
+}
+
+.section-container{
+
+    gap: 4rem;
+    height: 80%;
+
+}
+
+#experience {
+    position: relative;    
+}
+
+.exp-subtitle{
+
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+
+}
+
+.experience-details-container{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.art-container{
+
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+
+}
+
+article{
+
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+
+}
+
+article .linkicon{
+    cursor: default;
+}
+
+#project {
+    position: relative;
+}
+
+.color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+}
+
+.project-png{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-txt{
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn{
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.con-info-upper{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background:rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.con-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.con-info-container p{
+    font-size: larger;
+}
+
+.con-icon{
+    cursor: default;
+}
+
+.e-icon{
+    height: 2.5rem;
+}
+
+.fot {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+  }
+
+  .mar{
+    margin-left:31.5%;
+  }
+
+  footer{
+    height: 26vh;
+    margin: 0 1rem;
+  }
+
+  footer p{
+    text-align: center;
+  }
